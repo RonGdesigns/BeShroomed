@@ -97,6 +97,36 @@
             </a>
         </div>
     </footer>
+    <div id="toast-notification" class="toast">
+        <span id="toast-message">Item added to cart!</span>
+    </div>
+
+    <script>
+        // Select all the "Add to Cart" buttons
+        const cartButtons = document.querySelectorAll('.add-to-cart');
+        const toast = document.getElementById('toast-notification');
+        const toastMessage = document.getElementById('toast-message');
+
+        // Loop through each button and add a click event listener
+        cartButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                // Get the product name from the closest product card
+                const productCard = e.target.closest('.product-card');
+                const productName = productCard.querySelector('.product-title').innerText;
+
+                // Update the toast message with the specific product
+                toastMessage.innerText = productName + " added to your cart!";
+
+                // Show the toast by adding the 'show' class
+                toast.classList.add('show');
+
+                // Automatically hide the toast after 3 seconds
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 3000);
+            });
+        });
+    </script>
 
 </body>
 </html>
