@@ -341,7 +341,7 @@ nav a:hover {
     color: #ccc;
 }
 
-.story-img {
+.story-img, .story-video {
     flex: 1;
     width: 100%;
     max-width: 500px;
@@ -349,6 +349,7 @@ nav a:hover {
     object-fit: cover;
     border-radius: 8px;
     border: 2px solid #333;
+    background-color: #000; /* Keeps the box dark before the video loads */
 }
 
 .video-placeholder {
@@ -375,7 +376,7 @@ nav a:hover {
         gap: 30px;
         margin-bottom: 60px;
     }
-    .story-img, .video-placeholder {
+    .story-img, .story-video {
         height: 300px;
     }
 }
