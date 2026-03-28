@@ -61,7 +61,7 @@ nav a:hover {
 }
 
 /* =========================================
-   3. HERO SECTIONS (ALL PAGES)
+   3. HERO SECTIONS (ALL PAGES) - MOCK PHOTOS
    ========================================= */
 .hero {
     height: 70vh;
@@ -70,22 +70,26 @@ nav a:hover {
     justify-content: center;
     text-align: center;
     padding: 0 20px;
-    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1920x1080/1a1a1a/c2a878?text=Detroit+Mushroom+Farm') center/cover;
+    /* Moody coffee roaster vibe */
+    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1920&q=80') center/cover;
 }
 
 .cafe-hero {
     height: 50vh; 
-    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1920x1080/1a1a1a/c2a878?text=Cafe+Interior') center/cover;
+    /* Dark, aesthetic cafe interior */
+    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1920&q=80') center/cover;
 }
 
 .about-hero {
     height: 50vh;
-    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1920x1080/1a1a1a/c2a878?text=Urban+Farm+Setup') center/cover;
+    /* Urban indoor farming setup */
+    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://images.unsplash.com/photo-1530836369250-ef71a3f5e48c?auto=format&fit=crop&w=1920&q=80') center/cover;
 }
 
 .shop-hero {
     height: 50vh;
-    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1920x1080/1a1a1a/c2a878?text=Apothecary+Supplements') center/cover;
+    /* Amber apothecary bottles */
+    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1920&q=80') center/cover;
 }
 
 .hero h1 {
