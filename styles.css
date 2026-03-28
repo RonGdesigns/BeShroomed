@@ -176,6 +176,61 @@ footer { padding: 50px; background: #000; text-align: center; border-top: 1px so
 .social-icon:hover { transform: scale(1.2); fill: var(--accent-hover); }
 
 /* =========================================
+   UNIVERSAL BUTTON STYLES
+   ========================================= */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 5px; /* Gives it that clean button shape */
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    margin: 10px; /* Space between buttons */
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* The Solid Button */
+.primary-btn {
+    background-color: var(--accent-earth);
+    color: #000 !important; /* Forces text to be black for readability */
+}
+
+.primary-btn:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* The Outlined Button */
+.secondary-btn {
+    background-color: transparent;
+    border: 2px solid var(--accent-earth);
+    color: var(--accent-earth) !important;
+}
+
+.secondary-btn:hover {
+    background-color: var(--accent-earth);
+    color: #000 !important;
+}
+
+/* Mobile Fix: Make buttons stack and fill width */
+@media (max-width: 768px) {
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* =========================================
    8. MOBILE OPTIMIZATION (THE BIG FIX)
    ========================================= */
 @media (max-width: 768px) {
