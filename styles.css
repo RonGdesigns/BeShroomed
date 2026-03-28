@@ -98,26 +98,63 @@ nav a:hover {
 /* =========================================
    4. HOME PAGE CARDS (Desktop)
    ========================================= */
-.offerings {
-    padding: 60px 5%;
-    text-align: center;
-}
+..offerings { padding: 80px 5%; text-align: center; }
 
-.card-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 40px;
+.card-container { 
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    flex-wrap: wrap; 
 }
 
 .card {
-    background: var(--card-bg);
-    padding: 30px;
+    background-color: var(--card-bg); 
+    padding: 30px; 
     border-radius: 12px;
-    border: 1px solid #333;
-    width: 320px;
-    text-align: left;
+    width: 320px; 
+    text-align: left; 
+    border: 1px solid #333; 
     transition: 0.3s;
+    text-decoration: none; /* Removes default link underline */
+    color: var(--text-light); /* Keeps text white */
+    display: block; /* Makes the whole area clickable */
+}
+
+.card:hover { 
+    border-color: var(--accent-earth); 
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card h3 { 
+    color: var(--accent-earth); 
+    margin-bottom: 15px; 
+}
+
+.card p {
+    margin-bottom: 20px;
+    color: #bbb;
+    font-size: 0.95rem;
+}
+
+.card-link { 
+    font-weight: 600; 
+    color: var(--accent-earth);
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.card:hover .card-link {
+    border-bottom: 1px solid var(--accent-earth);
+}
+
+/* Mobile Fix for Clickable Cards */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto 20px;
+    }
 }
 
 .card:hover { transform: translateY(-5px); border-color: var(--accent-earth); }
