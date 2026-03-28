@@ -128,3 +128,32 @@ nav a:hover { color: var(--accent-earth); }
     .contact-form { grid-template-columns: 1fr; }
     .full-width { grid-column: span 1; }
 }
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.social-icon {
+    width: 30px !important;  /* Forces the width back to a standard size */
+    height: 30px !important; /* Forces the height back to a standard size */
+    fill: var(--accent-earth);
+    transition: transform 0.3s ease, fill 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    fill: var(--accent-hover);
+    transform: scale(1.2);
+}
