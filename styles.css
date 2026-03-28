@@ -233,3 +233,20 @@ footer { text-align: center; padding: 40px; background: #000; border-top: 1px so
     .location-info { flex-direction: column; text-align: center; }
     .map-container { height: 250px; width: 100%; }
 }
+/* -- Home Page Card Fix -- */
+    .card-container {
+        display: flex;
+        flex-direction: column; /* Stacks the cards vertically */
+        align-items: center;    /* Centers them on the screen */
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;            /* Makes the card responsive */
+        max-width: 90%;         /* Keeps it from touching the very edges of the screen */
+        margin: 0 auto;         /* Centers the card block */
+        padding: 25px;
+        background-color: var(--card-bg); /* Ensures the dark box is visible */
+        border: 1px solid #333;           /* Re-asserts the border on mobile */
+        border-radius: 8px;
+    }
