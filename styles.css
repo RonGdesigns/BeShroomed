@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeShroomed Farms | Detroit's Mushroom Farm & Café</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Color Palette & Variables */
+        :root {
+            --bg-dark: #121212;
+            --text-light: #f4f4f4;
+            --accent-earth: #c2a878; 
+            --accent-hover: #a18a5e;
+            --card-bg: #1e1e1e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Header & Nav */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: #000;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--accent-earth);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-earth);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+            /* Update the URL below when you have an actual image from the farm */
+            background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('placeholder-farm-image.jpg') center/cover;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background 0.3s, color 0.3s;
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .primary-btn {
+            background-color: var(--accent-earth);
+            color: #000;
+        }
+
+        .primary-btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .secondary-btn {
+            background-color: transparent;
+            border: 2px solid var(--accent-earth);
+            color: var(--accent-earth);
+        }
+
+        .secondary-btn:hover {
+            background-color: var(--accent-earth);
+            color: #000;
+        }
+
+        /* Offerings Cards */
+        .offerings {
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .offerings h2 {
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: left;
+            border: 1px solid #333;
+        }
+
+        .card h3 {
+            color: var(--accent-earth);
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .card a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid var(--accent-earth);
+        }
+
+        /* Location Section */
+        .location-info {
+            display: flex;
+            padding: 80px 5%;
+            background-color: #000;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .location-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .location-text h2 {
+            margin-bottom: 20px;
+            color: var(--accent-earth);
+        }
+
+        .location-text p {
+            margin-bottom: 15px;
+        }
+
+        .map-container {
+            flex: 1;
+            min-width: 300px;
+            height: 300px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #0a0a0a;
+            border-top: 1px solid #333;
+        }
+
+        .social-links {
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            color: var(--accent-earth);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">BeShroomed Farms</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Apothecary & Shop</a></li>
+                <li><a href="cafe.html">Café Order</a></li>
+                <li><a href="about.html">Our Story</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Functional Fungi, Cultivated in Detroit.</h1>
+            <p>Your local source for premium mushrooms, holistic wellness, and the perfect cup of coffee.</p>
+            <div class="cta-buttons">
+                <a href="cafe.html" class="btn primary-btn">Order Café</a>
+                <a href="shop.html" class="btn secondary-btn">Shop Supplements</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="offerings">
+        <h2>What We Cultivate</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>The Café</h3>
+                <p>Home of the Trinity Blend. Experience functional mushroom coffees, hot chocolates, and infused baked goods.</p>
+                <a href="cafe.html">View Menu &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Apothecary</h3>
+                <p>High-quality Reishi, Turkey Tail, and Lion's Mane capsules and tinctures for daily wellness.</p>
+                <a href="shop.html">Shop Health &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Urban Farm</h3>
+                <p>Learn to grow your own with our kits, or pick up fresh gourmet mushrooms right from our indoor farm.</p>
+                <a href="about.html#farm">Learn More &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-info">
+        <div class="location-text">
+            <h2>Rooted in the East Side</h2>
+            <p>Founded by Osotrari, we are proud to bring functional mushroom education and access to the heart of Detroit.</p>
+            <p><strong>Visit Us:</strong><br>16555 Harper Ave<br>Detroit, MI 48224</p>
+            <p><strong>Hours:</strong><br>Mon - Fri: 6:00 AM - 6:00 PM<br>Sat: 8:00 AM - 6:00 PM</p>
+        </div>
+        <div class="map-container">
+            <div class="map-placeholder">[ Google Map Widget Will Go Here ]</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BeShroomed Farms. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/beshroomedfarms" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=61552091885551" target="_blank">Facebook</a>
+        </div>
+    </footer>
+
+</body>
+</html>
