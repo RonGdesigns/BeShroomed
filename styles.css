@@ -413,3 +413,52 @@ footer {
     fill: var(--accent-hover);
     transform: scale(1.1); /* Subtle "pop" effect on hover */
 }
+/* =========================================
+   CONTACT FORM STYLES
+   ========================================= */
+.contact-section {
+    background-color: var(--card-bg);
+    padding: 60px 20px;
+    border-top: 1px solid #333;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-container h2 {
+    color: var(--accent-earth);
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group input, 
+.input-group select, 
+.input-group textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #121212;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: var(--text-light);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input-group input:focus, 
+.input-group select:focus, 
+.input-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-earth);
+}
