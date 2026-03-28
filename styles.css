@@ -223,3 +223,88 @@ footer {
         gap: 10px;
     }
 }
+
+/* =========================================
+   ABOUT PAGE SPECIFIC STYLES
+   ========================================= */
+
+.about-hero {
+    height: 50vh;
+    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1200x600/121212/c2a878?text=Detroit+Storefront') center/cover;
+}
+
+.story-container {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.story-block {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+/* This reverses the layout for every other block to keep the eye moving */
+.reverse-block {
+    flex-direction: row-reverse;
+}
+
+.story-text {
+    flex: 1;
+}
+
+.story-text h2 {
+    color: var(--accent-earth);
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    line-height: 1.2;
+}
+
+.story-text p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.story-img {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #333;
+}
+
+/* Styling for the video embed placeholder */
+.video-placeholder {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    border: 2px dashed var(--accent-earth);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-earth);
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* Mobile Responsiveness for the Story Blocks */
+@media (max-width: 800px) {
+    .story-block, .reverse-block {
+        flex-direction: column; /* Stacks text and image/video */
+        text-align: center;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    .story-img, .video-placeholder {
+        height: 300px;
+    }
+}
