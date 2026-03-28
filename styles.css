@@ -61,7 +61,7 @@ nav a:hover {
     justify-content: center;
     text-align: center;
     padding: 0 20px;
-    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('placeholder-farm-image.jpg') center/cover;
+    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1920x1080/1a1a1a/c2a878?text=Detroit+Mushroom+Farm') center/cover;
 }
 
 .hero h1 {
@@ -130,7 +130,7 @@ footer {
 
 .cafe-hero {
     height: 50vh; 
-    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1200x600/121212/c2a878?text=Cafe+Interior') center/cover;
+    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1920x1080/1a1a1a/c2a878?text=Cafe+Interior') center/cover;
 }
 
 .menu-container {
@@ -230,7 +230,7 @@ footer {
 
 .about-hero {
     height: 50vh;
-    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1200x600/121212/c2a878?text=Detroit+Storefront') center/cover;
+    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1920x1080/1a1a1a/c2a878?text=Urban+Farm+Setup') center/cover;
 }
 
 .story-container {
@@ -315,7 +315,7 @@ footer {
 
 .shop-hero {
     height: 50vh;
-    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1200x600/121212/c2a878?text=Mushroom+Apothecary') center/cover;
+    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1920x1080/1a1a1a/c2a878?text=Apothecary+Supplements') center/cover;
 }
 
 .shop-container {
