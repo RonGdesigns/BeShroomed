@@ -1,4 +1,6 @@
-/* --- Global Color Palette & Variables --- */
+/* =========================================
+   1. GLOBAL VARIABLES & BASE STYLES
+   ========================================= */
 :root {
     --bg-dark: #121212;
     --text-light: #f4f4f4;
@@ -20,7 +22,9 @@ body {
     line-height: 1.6;
 }
 
-/* --- Header & Nav --- */
+/* =========================================
+   2. HEADER & NAVIGATION
+   ========================================= */
 header {
     display: flex;
     justify-content: space-between;
@@ -53,7 +57,9 @@ nav a:hover {
     color: var(--accent-earth);
 }
 
-/* --- Base Hero Section (Used on Home Page) --- */
+/* =========================================
+   3. HERO SECTIONS (ALL PAGES)
+   ========================================= */
 .hero {
     height: 70vh;
     display: flex;
@@ -62,6 +68,21 @@ nav a:hover {
     text-align: center;
     padding: 0 20px;
     background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1920x1080/1a1a1a/c2a878?text=Detroit+Mushroom+Farm') center/cover;
+}
+
+.cafe-hero {
+    height: 50vh; 
+    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1920x1080/1a1a1a/c2a878?text=Cafe+Interior') center/cover;
+}
+
+.about-hero {
+    height: 50vh;
+    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1920x1080/1a1a1a/c2a878?text=Urban+Farm+Setup') center/cover;
+}
+
+.shop-hero {
+    height: 50vh;
+    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1920x1080/1a1a1a/c2a878?text=Apothecary+Supplements') center/cover;
 }
 
 .hero h1 {
@@ -75,7 +96,9 @@ nav a:hover {
     margin: 0 auto 30px;
 }
 
-/* --- Buttons --- */
+/* =========================================
+   4. BUTTONS
+   ========================================= */
 .btn {
     padding: 12px 24px;
     text-decoration: none;
@@ -84,6 +107,9 @@ nav a:hover {
     transition: background 0.3s, color 0.3s;
     margin: 0 10px;
     display: inline-block;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
 }
 
 .primary-btn {
@@ -106,33 +132,89 @@ nav a:hover {
     color: #000;
 }
 
-/* --- Footer --- */
-footer {
+/* =========================================
+   5. HOME PAGE SPECIFIC
+   ========================================= */
+.offerings {
+    padding: 80px 5%;
     text-align: center;
+}
+
+.offerings h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--card-bg);
     padding: 30px;
-    background-color: #0a0a0a;
-    border-top: 1px solid #333;
+    border-radius: 8px;
+    width: 300px;
+    text-align: left;
+    border: 1px solid #333;
 }
 
-.social-links {
-    margin-top: 15px;
-}
-
-.social-links a {
+.card h3 {
     color: var(--accent-earth);
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.card a {
+    color: var(--text-light);
     text-decoration: none;
-    margin: 0 10px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--accent-earth);
+}
+
+.location-info {
+    display: flex;
+    padding: 80px 5%;
+    background-color: #000;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.location-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.location-text h2 {
+    margin-bottom: 20px;
+    color: var(--accent-earth);
+}
+
+.location-text p {
+    margin-bottom: 15px;
+}
+
+.map-container {
+    flex: 1;
+    min-width: 300px;
+    height: 300px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
 }
 
 /* =========================================
-   CAFÉ PAGE SPECIFIC STYLES
+   6. CAFE PAGE SPECIFIC
    ========================================= */
-
-.cafe-hero {
-    height: 50vh; 
-    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1920x1080/1a1a1a/c2a878?text=Cafe+Interior') center/cover;
-}
-
 .menu-container {
     max-width: 800px;
     margin: 60px auto;
@@ -206,18 +288,16 @@ footer {
     margin-bottom: 0;
 }
 
-/* Mobile Responsiveness for Menu Items */
+/* Mobile Responsiveness for Cafe Menu */
 @media (max-width: 600px) {
     .menu-item {
         flex-direction: column; 
         align-items: flex-start;
     }
-    
     .menu-item-img {
         width: 100%; 
         height: 200px;
     }
-    
     .item-content {
         flex-direction: column;
         gap: 10px;
@@ -225,14 +305,8 @@ footer {
 }
 
 /* =========================================
-   ABOUT PAGE SPECIFIC STYLES
+   7. ABOUT PAGE SPECIFIC
    ========================================= */
-
-.about-hero {
-    height: 50vh;
-    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1920x1080/1a1a1a/c2a878?text=Urban+Farm+Setup') center/cover;
-}
-
 .story-container {
     max-width: 1000px;
     margin: 80px auto;
@@ -246,7 +320,6 @@ footer {
     margin-bottom: 80px;
 }
 
-/* This reverses the layout for every other block to keep the eye moving */
 .reverse-block {
     flex-direction: row-reverse;
 }
@@ -278,7 +351,6 @@ footer {
     border: 2px solid #333;
 }
 
-/* Styling for the video embed placeholder */
 .video-placeholder {
     flex: 1;
     width: 100%;
@@ -295,126 +367,21 @@ footer {
     font-weight: 600;
 }
 
-/* Mobile Responsiveness for the Story Blocks */
+/* Mobile Responsiveness for About Page */
 @media (max-width: 800px) {
     .story-block, .reverse-block {
-        flex-direction: column; /* Stacks text and image/video */
+        flex-direction: column; 
         text-align: center;
         gap: 30px;
         margin-bottom: 60px;
     }
-
     .story-img, .video-placeholder {
         height: 300px;
     }
 }
 
 /* =========================================
-   SHOP PAGE SPECIFIC STYLES
-   ========================================= */
-
-.shop-hero {
-    height: 50vh;
-    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://placehold.co/1920x1080/1a1a1a/c2a878?text=Apothecary+Supplements') center/cover;
-}
-
-.shop-container {
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 0 20px;
-}
-
-.shop-category-title {
-    color: var(--accent-earth);
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-    margin-bottom: 40px;
-    font-size: 2rem;
-    margin-top: 60px;
-}
-
-/* The Grid System for Products */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-}
-
-.product-card {
-    background-color: var(--card-bg);
-    border: 1px solid #333;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
-}
-
-.product-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 20px;
-    border: 2px solid #222;
-}
-
-.product-title {
-    font-size: 1.3rem;
-    color: var(--text-light);
-    margin-bottom: 10px;
-}
-
-.product-desc {
-    font-size: 0.95rem;
-    color: #bbb;
-    margin-bottom: 20px;
-    flex-grow: 1; /* Pushes the price and button to the bottom evenly */
-}
-
-.product-price {
-    font-size: 1.4rem;
-    color: var(--accent-earth);
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.add-to-cart {
-    width: 100%;
-    margin: 0;
-    cursor: pointer;
-}
-
-/* =========================================
-   UPDATED FOOTER SOCIAL ICONS
-   ========================================= */
-
-.social-links {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-}
-
-.social-icon {
-    width: 30px; /* Size of the icon */
-    height: 30px;
-    fill: var(--accent-earth); /* Colors the SVG to match your theme */
-    transition: fill 0.3s ease, transform 0.3s ease;
-}
-
-.social-links a:hover .social-icon {
-    fill: var(--accent-hover);
-    transform: scale(1.1); /* Subtle "pop" effect on hover */
-}
-/* =========================================
-   CONTACT FORM STYLES
+   8. CONTACT FORM STYLES
    ========================================= */
 .contact-section {
     background-color: var(--card-bg);
@@ -462,11 +429,87 @@ footer {
     outline: none;
     border-color: var(--accent-earth);
 }
+
 /* =========================================
-   JAVASCRIPT TOAST NOTIFICATION STYLES
+   9. SHOP PAGE SPECIFIC
+   ========================================= */
+.shop-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.shop-category-title {
+    color: var(--accent-earth);
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    margin-top: 60px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.product-card {
+    background-color: var(--card-bg);
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.product-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 2px solid #222;
+}
+
+.product-title {
+    font-size: 1.3rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.product-desc {
+    font-size: 0.95rem;
+    color: #bbb;
+    margin-bottom: 20px;
+    flex-grow: 1; 
+}
+
+.product-price {
+    font-size: 1.4rem;
+    color: var(--accent-earth);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.add-to-cart {
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* =========================================
+   10. JAVASCRIPT TOAST NOTIFICATION
    ========================================= */
 .toast {
-    visibility: hidden; /* Hidden by default */
+    visibility: hidden; 
     min-width: 250px;
     background-color: var(--accent-earth);
     color: #000;
@@ -477,16 +520,44 @@ footer {
     z-index: 1000;
     left: 50%;
     bottom: 30px;
-    transform: translateX(-50%); /* Centers the box */
+    transform: translateX(-50%); 
     font-weight: 600;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity 0.3s, bottom 0.3s;
 }
 
-/* This class is added by JavaScript when clicked */
 .toast.show {
     visibility: visible;
     opacity: 1;
-    bottom: 50px; /* Slides it up slightly for a nice effect */
+    bottom: 50px; 
+}
+
+/* =========================================
+   11. FOOTER & SOCIAL ICONS
+   ========================================= */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #0a0a0a;
+    border-top: 1px solid #333;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-icon {
+    width: 30px; 
+    height: 30px;
+    fill: var(--accent-earth); 
+    transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover .social-icon {
+    fill: var(--accent-hover);
+    transform: scale(1.1); 
 }
